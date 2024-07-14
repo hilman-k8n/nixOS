@@ -26,6 +26,10 @@
     {
       device  = "/dev/disk/by-uuid/79FB-D0B2";
       fsType = "exfat";
+      options = [
+        "uid=1000"
+        "gid=100"
+      ];
     }; 
 
   swapDevices =
