@@ -139,10 +139,11 @@ in
     gnomeExtensions.lock-keys
     gnomeExtensions.onedrive
     gnomeExtensions.net-speed-simplified
-    microsoft-edge
     jetbrains.idea-community
     jq
     kubectx
+    microsoft-edge
+    meld
     my-helmfile
     my-kubernetes-helm
     obs-studio
