@@ -155,7 +155,6 @@ in
     telegram-desktop
     teleport_14
     variety
-    vim
     virtualbox
     vlc
     vscode
@@ -172,6 +171,11 @@ in
     enable = true;
     remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
     dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+  };
+
+  programs.vim = {
+    defaultEditor = true;
+    package = pkgs.vim-full;
   };
   # List services that you want to enable:
 
