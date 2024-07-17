@@ -30,7 +30,6 @@ in
 
   networking.hostName = "nixos"; # Define your hostname.
   networking.hosts = {
-    "127.0.0.1" = ["bangdevops.com"];
   };
 # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
