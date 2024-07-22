@@ -189,6 +189,7 @@ in
     ohMyZsh = {
       enable = true;
       plugins = ["aws" "git" "kubectl" "kubectx" "kube-ps1" "man"];
+      theme = "robbyrussell";
     };
   };
   # List services that you want to enable:
