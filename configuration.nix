@@ -121,6 +121,7 @@ in
     packages = with pkgs; [
       kubectl
     ];
+    shell = pkgs.zsh;
   };
 
   # Allow unfree packages
@@ -178,6 +179,17 @@ in
   programs.vim = {
     defaultEditor = true;
     package = pkgs.vim-full;
+  };
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;
+    autosuggestions.enable = true;
+    syntaxHighlighting.enable = true;
+
+    ohMyZsh = {
+      enable = true;
+      plugins = ["aws" "git" "kubectl" "kubectx" "kube-ps1" "man"];
+    };
   };
   # List services that you want to enable:
 
