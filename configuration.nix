@@ -154,6 +154,7 @@ in
     spotify
     telegram-desktop
     teleport_14
+    thunderbird
     variety
     virtualbox
     vlc
