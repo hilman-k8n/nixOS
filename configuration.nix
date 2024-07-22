@@ -186,6 +186,11 @@ in
     autosuggestions.enable = true;
     syntaxHighlighting.enable = true;
 
+    shellAliases = {
+      _kube-activate = "export PROMPT='$(kube_ps1)'$PROMPT";
+      _kube-deactivate = "export PROMPT='%{%}%(?:%{%}%1{➜%} :%{%}%1{➜%} ) %{%}%c%{%} $(git_prompt_info)%{%}'";
+    };
+
     ohMyZsh = {
       enable = true;
       plugins = ["aws" "git" "kubectl" "kubectx" "kube-ps1" "man"];
