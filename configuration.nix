@@ -134,7 +134,6 @@ in
   #  wget  
     cider
     discord
-    deluge
     firefox
     git
     google-chrome
