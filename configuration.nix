@@ -144,6 +144,7 @@ in
     gnomeExtensions.net-speed-simplified
     jetbrains.idea-community
     jq
+    kubectl-neat
     kubectx
     microsoft-edge
     meld
