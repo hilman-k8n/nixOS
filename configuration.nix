@@ -196,7 +196,7 @@ in
 
     shellAliases = {
       _kube-activate = "export PROMPT='$(kube_ps1)'$PROMPT";
-      _kube-deactivate = "export PROMPT='%{%}%(?:%{%}%1{➜%} :%{%}%1{➜%} ) %{%}%c%{%} $(git_prompt_info)%{%}'";
+      _kube-deactivate = "export PROMPT=\${PROMPT//'$(kube_ps1)'}";
     };
 
     ohMyZsh = {
