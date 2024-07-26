@@ -64,7 +64,10 @@ in
   };
 
   # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
+  services.xserver.displayManager.gdm = {
+    enable = true;
+    autoSuspend = false;
+  };
   services.xserver.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
@@ -122,6 +125,11 @@ in
       kubectl
     ];
     shell = pkgs.zsh;
+  };
+  users.users.guest = {
+    uid = 1100;
+    isNormalUser = true;
+    description = "guest";
   };
 
   # Allow unfree packages
