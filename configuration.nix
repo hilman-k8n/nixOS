@@ -131,6 +131,12 @@ in
     isNormalUser = true;
     description = "guest";
   };
+  users.users.dummy = {
+    uid = 980;
+    group = "nogroup";
+    isSystemUser = true;
+    description = "dummy";
+  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
