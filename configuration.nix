@@ -132,9 +132,8 @@ in
     description = "guest";
   };
   users.users.dummy = {
-    uid = 980;
-    group = "nogroup";
-    isSystemUser = true;
+    uid = 1101;
+    isNormalUser = true;
     description = "dummy";
   };
 
@@ -238,6 +237,13 @@ in
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "23.11"; # Did you read the comment?
+  systemd.tmpfiles.settings = {
+    "100-dummmy-hide-gdm" = {
+      "/var/lib/AccountsService/users/dummy"."f+" = {
+        argument = "[User]\\nSystemAccount=true";
+      };
+    };
+  };
   virtualisation.docker = {
     enable = true;
     rootless = {
