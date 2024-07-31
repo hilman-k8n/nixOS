@@ -223,6 +223,7 @@ in
   # Open ports in the firewall.
   networking.firewall.allowedTCPPorts = [
     3389
+    6443
     8080
     8081
   ];
