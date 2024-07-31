@@ -163,6 +163,7 @@ in
     my-helmfile
     my-kubernetes-helm
     obs-studio
+    openlens
     qbittorrent
     slack
     spotify
