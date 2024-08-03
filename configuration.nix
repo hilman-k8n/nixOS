@@ -147,6 +147,7 @@ in
   #  wget  
     cider
     discord
+    ffmpeg
     firefox
     git
     google-chrome
