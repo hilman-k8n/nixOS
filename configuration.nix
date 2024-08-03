@@ -202,6 +202,7 @@ in
     syntaxHighlighting.enable = true;
 
     shellAliases = {
+      _ffmpeg-anbernic = "ffmpeg -i \${FF_INPUT} -vf scale=640x480 -vcodec libx264 -profile:v main -level 3.1 -preset medium -crf 23 -x264-params ref=4 -acodec libvorbis -movflags +faststart \${FF_INPUT}.mkv";
       _kube-activate = "export PROMPT='$(kube_ps1)'$PROMPT";
       _kube-deactivate = "export PROMPT=\${PROMPT//'$(kube_ps1)'}";
     };
