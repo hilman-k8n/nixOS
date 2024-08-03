@@ -219,6 +219,7 @@ in
     enable = true;
     role = "server";
   };
+  services.tailscale.enable = true;
   services.udev.packages = with pkgs; [ gnome.gnome-settings-daemon ];
   services.onedrive.enable = true;
   # Open ports in the firewall.
