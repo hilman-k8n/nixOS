@@ -166,6 +166,7 @@ in
     obs-studio
     openlens
     qbittorrent
+    shutter
     slack
     spotify
     telegram-desktop
