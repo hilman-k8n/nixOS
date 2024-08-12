@@ -176,7 +176,7 @@ in
     variety
     virtualbox
     vlc
-    vscode
+    vscode-fhs
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
