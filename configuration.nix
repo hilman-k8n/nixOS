@@ -152,6 +152,7 @@ in
     git
     google-chrome
     gnomeExtensions.appindicator
+    gnomeExtensions.freon
     gnomeExtensions.lock-keys
     gnomeExtensions.onedrive
     gnomeExtensions.net-speed-simplified
@@ -159,6 +160,7 @@ in
     jq
     kubectl-neat
     kubectx
+    lm_sensors
     microsoft-edge
     meld
     my-helmfile
