@@ -29,6 +29,7 @@
       options = [
         "uid=1000"
         "gid=100"
+        "comment=x-gvfs-show"
       ];
     }; 
 
